@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="config.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <img id="weatherImage1" src="images/cloudIcon.png" alt="weatherImage">
+    <div class="container">
+        <h1 id="heading">Weather Report</h1>
+        <form id="grid1" action="">
+            <input type="text" name="textBox" pattern="^[a-zA-Z\s]*" id="textBox">
+            <button id="submitButton" type="submit">SUBMIT</button>
+        </form>
+        <div id="grid2">
+            <img id="weatherImage2" src="images/cloudIcon.png" alt="weatherImage">
+            <p id="place">--</p>
+            <p id="temperature">--&deg;c</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  height: 100vh;
+  background: url("images/weatherBackgroundImage.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#weatherImage1 {
+  position: absolute;
+  width: 15%;
+  left: 10px;
+  top: 10px;
+}
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85vh;
+  width: 900px;
+  max-width: 85%;
+}
+#heading {
+  font-size: 5rem;
+  font-variant-caps: all-small-caps;
+}
+
+form,
+#grid2 {
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  flex-wrap: wrap;
+}
+form {
+  justify-content: center;
+  height: 400px;
+  background: linear-gradient(
+    to bottom,
+    hsl(0, 0%, 5%, 0.6),
+    hsl(201, 18%, 90%, 0.6)
+  );
+}
+#textBox,
+#submitButton {
+  box-sizing: initial;
+  font-size: 1.5rem;
+  padding: 0.4em 1.5em;
+  outline: none;
+  border: none;
+  border-radius: 60px;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+}
+#textBox {
+  background: linear-gradient(
+    to right,
+    hsl(0, 0%, 5%, 0.6),
+    hsl(201, 18%, 90%, 0.6)
+  );
+}
+#submitButton {
+  margin-left: 1rem;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  cursor: pointer;
+}
+#submitButton:hover,
+#submitButton:active {
+  color: hsla(0, 0%, 0%, 0.7);
+  background-color: whitesmoke;
+}
+#grid2 {
+  height: 150px;
+  padding: 1rem 2rem;
+  background: linear-gradient(
+    to right,
+    hsl(0, 0%, 10%, 0.5) 50%,
+    hsl(201, 18%, 90%, 0.5)
+  );
+  justify-content: space-between;
+}
+#weatherImage2 {
+  width: 100px;
+}
+#place,
+#temperature {
+  color: whitesmoke;
+  font-size: 2rem;
+}
